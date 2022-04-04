@@ -1,0 +1,164 @@
+* {
+margin: 0;
+}
+
+body {
+    background-color: #8e7d6c;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(pie2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    background-color: #8e7d6ca8;
+    padding: 30px 0;
+    margin-top: -50px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+#module_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+label {
+    color: #fff;
+    font-size: 30px;
+    background-color: #313840b0;
+    padding: 5px;
+}
+
+input {
+    width: 150px;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 7px 3px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#module_start {
+    display: flex;
+    justify-content: center;
+}
+
+#btn {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border: none;
+    background-color: #313840b0;
+    letter-spacing: 3px;
+    padding: 10px;
+    transition: 1s;
+}
+
+#btn:hover{
+    border:none;
+    color: #fff;
+    box-shadow: 0 0 5px #576983,
+                0 0 25px  #576983,
+                0 0 50px  #576983,
+                0 0 200px  #576983;
+}
+
+#container_countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#countDown {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: #313840b0;
+    padding: 20px 30px;
+    display: none;
+}
+
+#containerButtton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.btnStyle {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background-color: #313840b0;
+    padding: 10px 10px;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+.btnStyle:hover{
+    border:none;
+    color: #fff;
+    box-shadow: 0 0 5px #576983,
+                0 0 25px  #576983,
+                0 0 50px  #576983,
+                0 0 200px  #576983;
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #container {
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input {
+        width: 120px;
+        font-size: 20px;
+        padding: 7px 3px;
+    }
+
+    #module_inner {
+        margin: 20px;
+    }
+
+    #countDown {
+        font-size: 30px;
+        padding: 20px 20px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    body {
+        height: 140vh;
+    }
+}
